@@ -12,6 +12,11 @@ so we are creating
 create a security group with these ports
 <img width="869" alt="image" src="https://github.com/user-attachments/assets/e269cb5a-7800-4b5c-8e61-28bc42326c0c" />
 
+or specific
+
+<img width="334" alt="image" src="https://github.com/user-attachments/assets/75dc5d06-ade1-4bc1-9918-29e8f0e4eb14" />
+
+
 ### Step 1: Prepare the Load Balancer Node
 1. **Install HAProxy:**
    ```bash
