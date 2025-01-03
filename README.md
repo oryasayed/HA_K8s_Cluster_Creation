@@ -27,19 +27,18 @@ create a security group with these ports
 
    ``` Add the following configuration: ,,haproxy <img width="409" alt="image" src="https://github.com/user-attachments/assets/40c8aabb-23e4-4cdc-826e-c362f8032454" />
 
+frontend kubernetes-frontend
+    bind *:6443
+    option tcplog
+    mode tcp
+    default_backend kubernetes-backend
 
-   frontend kubernetes-frontend
-       bind *:6443
-       option tcplog
-       mode tcp
-       default_backend kubernetes-backend
-
-   backend kubernetes-backend
-       mode tcp
-       balance roundrobin
-       option tcp-check
-       server master1 <MASTER1_IP>:6443 check
-       server master2 <MASTER2_IP>:6443 check
+backend kubernetes-backend
+    mode tcp
+    balance roundrobin
+    option tcp-check
+    server master1 <MASTER1_IP>:6443 check
+    server master2 <MASTER2_IP>:6443 check
    ```
 <img width="422" alt="image" src="https://github.com/user-attachments/assets/c8f7cd85-61d8-4307-8c62-214505dc6e44" />
 
