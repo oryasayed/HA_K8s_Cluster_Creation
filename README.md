@@ -102,6 +102,9 @@ you can install master 1 or you can install in all worker node
    ```
 you can install master 1 or you can install in all worker node
 
+4. Install Ingress-NGINX Controller:
+  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.49.0/deploy/static/provider/baremetal/deploy.yaml
+
 
 ### Step 4: Join the Second & third Master Node
 1. **Get the join command and certificate key from the first master node:**
