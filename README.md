@@ -1,6 +1,6 @@
 # HA_K8s_Cluster_Creation
 
-To set up a highly available Kubernetes cluster with two master nodes and three worker nodes without using a cloud load balancer,
+To set up a highly available Kubernetes cluster with 3 master nodes and 2 worker nodes without using a cloud load balancer,
  you can use a virtual machine to act as a load balancer for the API server. Here are the detailed steps for setting up such a cluster:
 
 ### Prerequisites
